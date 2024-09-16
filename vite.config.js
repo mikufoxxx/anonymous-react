@@ -12,6 +12,7 @@ export default defineConfig({
     }
   },
   server: {
+    historyApiFallback: true,
     host: true,  // 确保Vite能够监听所有接口
   },
   // 修复404页面问题
