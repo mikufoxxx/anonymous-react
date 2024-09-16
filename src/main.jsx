@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { GlobalStyles } from '@mui/material';
 import App from './App.jsx'
+import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,7 +20,8 @@ createRoot(document.getElementById('root')).render(
             height: '100%',
           },
         }}
-      />
+    />
+    <ToastContainer />
     <App/>
   </StrictMode>,
 )
