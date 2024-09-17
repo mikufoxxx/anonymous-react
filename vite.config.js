@@ -11,11 +11,6 @@ export default defineConfig({
       }
     }
   },
-  preview: {
-    port: 10000,  // 设置 Render 所需的端口
-    host: '0.0.0.0',
-    strictPort: true,
-  },
   // 重要的配置：history fallback
   resolve: {
     alias: {
@@ -25,11 +20,5 @@ export default defineConfig({
   server: {
     historyApiFallback: true,  // 确保所有路由重定向到 index.html
     host: true,  // 确保Vite能够监听所有接口
-  },
-  // 修复404页面问题
-  preview: {
-    port: 10000,  // 设置为 Render 要求的端口 10000
-    host: '0.0.0.0',  // 确保监听所有接口
-    strictPort: true, // 确保严格使用端口 10000
   },
 })
